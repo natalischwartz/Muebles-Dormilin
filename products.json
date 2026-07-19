@@ -14,6 +14,22 @@
         "img":"https://picsum.photos/seed/picsum/200/300"
         
 
+    },
+    {
+        "name":"mueble2",
+        "price":24000,
+        "description":"lorem impsum",
+        "img":"https://picsum.photos/seed/picsum/200/300"
+        
+
+    },
+    {
+        "name":"mueble2",
+        "price":24000,
+        "description":"lorem impsum",
+        "img":"https://picsum.photos/seed/picsum/200/300"
+        
+
     }
 
 ]

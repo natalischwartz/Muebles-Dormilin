@@ -15,43 +15,57 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    background-image: linear-gradient(to bottom, rgba(63, 62, 62, 0.8) 4%, rgba(63, 62, 62, 0) 107%), url(./img-hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 li{
     list-style-type: none;
 }
+ 
+i{
+    color: #999999;
+}
 
-.img-hero{
+/****MAIN****/
+
+.hero-header {
+    position: relative; 
     width: 100%;
-    opacity: 30%;
-    position: absolute;
-    z-index: -9;
-    height: 100%;
+    height: 70vh; /* Altura del 70% de la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+    
+}
+
+.hero-content {
+    position: relative; /* Sube el contenido por encima del pseudo-elemento */
+    z-index: 2; /* Asegura que esté visible y nítido sobre la capa oscura */
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+
+.container_card{
+    border: 1px solid red;
+}
+
+.card-img-top{
+    height: 200px;
     object-fit: cover;
 }
 
-h1{
-    background: linear-gradient(50deg, #ffd15d, #65ff65);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+/****FOOTER****/
+
+footer{
+    background-color: whitesmoke;
 }
 
-i{
-    background: linear-gradient(50deg, #ffd15d, #65ff65);
-    margin: 5px;
-    border-radius: 5px;
-    padding: 5px;
-    transition: all 025s;
-
-}
-
-i:hover{
-     backdrop-filter: brightness(3.5);
-}
-
-button{
+.btn{
     cursor: pointer;
-    background: linear-gradient(50deg, #ffd15d, #65ff65);
+   background-color: #F7B852;
     padding: 5px 10px;
     color: #000;
     border-radius: 5px;
@@ -60,7 +74,11 @@ button{
     
 }
 
-button:hover{
+.btn:hover{
     backdrop-filter: brightness(2.5);
     box-shadow: 0px 0px 4px rgb(0,0,0);
+}
+
+.logo-dormilin img{
+    width:20% ;
 }

@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./logo-dormilin.jpg" type="image/x-icon">
+
+     <script src="https://kit.fontawesome.com/6fca39497a.js" crossorigin="anonymous"></script>
+
     <title>Muebles Dormilin</title>
 
     <!-- CSS Bootstrap-->
@@ -10,29 +14,21 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href=""></a>
-                </li>
-                <li>
-                    <a href=""></a>
-                </li>
-                <li>
-                    <a href=""></a>
-                </li>
-                <li>
-                    <a href=""></a>
-                </li>
-            </ul>
-
-        </nav>
-    </header>
+    
     <main>
-        <img class="img-hero" src="./img-hero.jpg" alt="Imagen de muebles">
-        <h1>Muebles Dormilin</h1>
-        <i>Muebles de pino y colchoneria</i>
+       <section class="hero-header">
+        <!-- Contenedor del contenido (se mantiene 100% opaco) -->
+        <div class="hero-content text-center text-white p-5">
+            <div class="mb-4">
+                <span class="fw-bold fs-1 text-white" style="letter-spacing: 6px;">DORMILIN</span><br>
+                <span class="fs-6 text-light" style="letter-spacing: 3px;">MUEBLES Y COLCHONES</span>
+            </div>
+                <h1>Nuestras Ofertas</h1>
+                <p>Descubre los mejores muebles para tu hogar.</p>
+                <button class="btn btn-primary btn-lg mt-3">Ver Catálogo</button>
+            </div>
+        </section>
+        
         <section class="products">
             <div class="container my-5">
                 <div id="productsUL" class="row">
@@ -42,15 +38,44 @@
         </section>
     </main>
     <footer>
-        <div class="cta">
-            <a href="">
-                <button>Enviar Whatsapp</button>
-                <!--icono whatsapp-->
-            </a>
+        <section>
+            <div class="logo-dormilin">
+                <img src="./logo-dormilin.jpg" alt="">
+
+            </div>
+            <div class="contact-info">
+                <i class="fa-solid fa-phone mr-3 text-2xl sm:text-3xl"></i>
+                 <i class="fa-solid fa-envelope mr-3 text-2xl text-emerald-700 sm:text-3xl"></i>
+                 icono de ubicacion 
+
+            </div>
+            <div class="social-media">
+                <ul class="social-media_redes">
+                    <li>
+                        <a href="" class="cursor-pointer" target="_blank">
+                            <i class="fa-brands fa-instagram text-2xl sm:text-3xl">
+                            </i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="cursor-pointer" target="_blank">
+                            <i class="fa-brands fa-facebook mx-3 text-2xl sm:text-3xl">
+                            </i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank" class="cursor-pointer">
+                            <i class="fa-brands fa-whatsapp text-2xl sm:text-3xl"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <div class="copyright">
+            Todos los derechos reservados &copy
         </div>
         <div>
-             todos los derechos reservados
-            Muebles dormilin
+            Desarrollado por Natali Schwartz
         </div>
        
     </footer>
