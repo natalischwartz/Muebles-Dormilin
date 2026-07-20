@@ -1,5 +1,6 @@
 [
     {
+        "id":"0",
         "name":"mueble1",
         "price":23000,
         "description":"lorem impsum",
@@ -7,7 +8,7 @@
         
 
     },
-     {
+     {  "id":"1",
         "name":"mueble2",
         "price":24000,
         "description":"lorem impsum",
@@ -15,7 +16,7 @@
         
 
     },
-    {
+    {   "id":"2",
         "name":"mueble2",
         "price":24000,
         "description":"lorem impsum",
@@ -23,7 +24,7 @@
         
 
     },
-    {
+    {   "id":"3",
         "name":"mueble2",
         "price":24000,
         "description":"lorem impsum",

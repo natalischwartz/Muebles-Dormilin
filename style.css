@@ -8,7 +8,7 @@ html{
     font-size: 12px;
 }
 
-body{
+.home-page{
     overflow-x: hidden;
     min-height: 100vh;
     text-align: center;
@@ -18,6 +18,7 @@ body{
     background-image: linear-gradient(to bottom, rgba(63, 62, 62, 0.8) 4%, rgba(63, 62, 62, 0) 107%), url(./img-hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 li{
@@ -47,21 +48,42 @@ i{
     text-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
+/* .text-catalogo{
+    background-color: #F7B852;
+    display: inline-block;
+} */
 
+.text-catalogo p{
+   background: linear-gradient(50deg, #E09B2D , #FFFFFF );
+    
+    /* 2. Recorte para que el fondo solo afecte al texto */
+    -webkit-background-clip: text;
+    background-clip: text;
+    
+    /* 3. Hacer transparente el relleno del texto (Sintaxis limpia) */
+    -webkit-text-fill-color: transparent;
+    color: transparent; /* Respaldar compatibilidad */
+    
+    /* 4. Tipografía en negrita para que el metalizado resalte */
+    font-weight: 800;
+    font-size: 2.5rem; 
+    
+    /* 5. Sombra limpia usando filter en lugar de text-shadow */
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.6));
+}
 .container_card{
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+
+
 .card-img-top{
-    height: 200px;
     object-fit: cover;
 }
 
-/****FOOTER****/
-
-footer{
-    background-color: whitesmoke;
-}
 
 .btn{
     cursor: pointer;
@@ -71,6 +93,7 @@ footer{
     border-radius: 5px;
     border-style: none;
     transition: all 0.25s;
+    border: 2px solid #9999;
     
 }
 
@@ -79,6 +102,75 @@ footer{
     box-shadow: 0px 0px 4px rgb(0,0,0);
 }
 
+/****FOOTER****/
+
+footer{
+    background-color: whitesmoke;
+}
+
+footer section {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+    gap:20px;
+    padding:30px 0;
+}
+
+ul{
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+
+
 .logo-dormilin img{
-    width:20% ;
+    width:25% ;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-media_redes{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.contact-info i,
+.social-media i{
+    font-size: 16px;
+}
+
+.fa-cart-shopping,
+.fa-eye,
+.fa-cart-plus{
+    color: whitesmoke;
+}
+
+.developed-by,
+.copyright{
+    color: #7D776D;
+}
+
+
+/****RESPONSIVE*****/
+
+/* --- TABLETS (A partir de 768px) --- */
+
+@media screen and (min-width: 768px){
+    footer section {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+}
+   
+}
+
+/* --- COMPUTADORAS / DESKTOPS (A partir de 1024px) --- */
+@media screen and (min-width: 1024px) {
+    
 }
