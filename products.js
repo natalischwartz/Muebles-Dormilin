@@ -5,7 +5,7 @@ const cartTotal = document.getElementById("cartTotal");
 const sendWhatsappBtn = document.getElementById("sendWhatsappBtn");
 const emptyCartBtn = document.getElementById("emptyCartBtn");
 
-const PHONE_NUMBER = "5491112345678"; 
+const PHONE_NUMBER = "5491132778004"; 
 let cart = JSON.parse(localStorage.getItem("dormilin_cart")) || [];
 
 // 1. Obtener ID de la URL
