@@ -15,6 +15,29 @@
 </head>
 <body class="home-page">
 
+    <header class="bg-white shadow-sm sticky-top py-2">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- Logo con los tres puntos característicos de Dormilin -->
+            <a class="navbar-brand d-flex align-items-center gap-3 text-decoration-none" href="#">
+                <div class="d-flex gap-1">
+                    <span class="logo-dot bg-coral"></span>
+                    <span class="logo-dot bg-gray"></span>
+                    <span class="logo-dot bg-yellow"></span>
+                </div>
+                <div class="d-flex flex-column">
+                    <span class="fw-bold text-dark fs-4 lh-1" style="letter-spacing: 3px;">DORMILIN</span>
+                    <span class="text-muted uppercase fs-7" style="letter-spacing: 1.5px; font-size: 0.65rem;">MUEBLES Y COLCHONES</span>
+                </div>
+            </a>
+
+            <!-- Enlaces rápidos (Opcional) -->
+            <nav class="d-none d-md-flex gap-4">
+                <a href="#productsUL" class="text-dark text-decoration-none fw-semibold">Catálogo</a>
+                <a href="#footer" class="text-dark text-decoration-none fw-semibold">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
     <!-- Botón Flotante para Ver Carrito -->
     <button class="btn btn-warning position-fixed bottom-0 end-0 m-4 rounded-circle shadow-lg z-3 p-3" 
             data-bs-toggle="modal" 
@@ -27,19 +50,22 @@
     </button>
     
     <main>
-       <section class="hero-header">
-        <!-- Contenedor del contenido (se mantiene 100% opaco) -->
-        <div class="hero-content text-center text-white p-5">
-            <div class="mb-4">
-                <span class="fw-bold fs-1 text-white" style="letter-spacing: 6px;">DORMILIN</span><br>
-                <span class="fs-6 text-light" style="letter-spacing: 3px;">MUEBLES Y COLCHONES</span>
+       <section class="hero-section position-relative d-flex align-items-center">
+        <div class="container position-relative z-2">
+            <div class="row">
+                <!-- Tarjeta de contenido alineada a la izquierda -->
+                <div class="col-12 col-md-8 col-lg-6">
+                    <div class="hero-card p-3 p-md-4 rounded-4 shadow-sm">
+                        <h1 class="fw-bold mb-2">Renová tu hogar con elegancia</h1>
+                        <p class="text-muted mb-3">Muebles de pino y colchones para tu confort.</p>
+                        <a href="#productsUL" class="btn btn-warning btn-sm px-3 py-2 shadow-sm rounded-2 text-dark fw-bold">
+                            Ver Catálogo <i class="fa-solid fa-arrow-down ms-1"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-                <h1>Nuestras Ofertas</h1>
-                <p>Descubre los mejores muebles para tu hogar.</p>
-                <!-- <button class="btn btn-primary btn-lg mt-3">Ver Catálogo</button> -->
-                 
-            </div>
-        </section>
+        </div>
+    </section>
         
         <section class="products">
             <div class="text-catalogo">
@@ -84,16 +110,24 @@
     </div>
 
     <footer>
-        <section>
+        <section id="footer" class="container">
             <div class="logo-dormilin">
                 <img src="./logo-dormilin.jpg" alt="">
 
             </div>
             <div class="contact-info">
-                <i class="fa-solid fa-phone text-2xl sm:text-3xl"></i>+ 54 9 1132778004
-                 <i class="fa-solid fa-envelope text-2xl text-emerald-700 sm:text-3xl"></i>info@formilin.com
-                 <i class="fa-solid fa-location-dot"></i>9 de julio 178, Moron
-
+                <div class="contact-info_item">
+                     <i class="fa-solid fa-phone text-2xl sm:text-3xl"></i>
+                     <span>+ 54 9 1132778004</span>
+                </div>
+                <div class="contact-info_item">
+                    <i class="fa-solid fa-envelope text-2xl text-emerald-700 sm:text-3xl"></i>
+                    <span> info@dormilin.com</span>
+                </div>
+                 <div class="contact-info_item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>  9 de julio 178, Moron, Buenos Aires</span>
+                </div>
             </div>
             <div class="social-media">
                 <ul class="social-media_redes">
@@ -117,10 +151,10 @@
                 </ul>
             </div>
         </section>
-        <div class="copyright">
+        <div class="copyright text-center">
             Todos los derechos reservados &copy
         </div>
-        <div class="developed-by">
+        <div class="developed-by text-center">
             <p className="text-xs">
             Desarrollado por
             <a 
