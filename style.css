@@ -17,6 +17,10 @@ i{
     color: #999999;
 }
 
+a{
+    text-decoration: none;
+}
+
 /****MAIN****/
 
 /****HERO****/
@@ -117,53 +121,56 @@ i{
 
 /****FOOTER****/
 
-footer{
+#footer{
     background-color: whitesmoke;
+  display: flex;
+  align-items: center;      
+  justify-content: space-between; 
+  gap: 20px;
+  padding: 24px 16px;
+  flex-wrap: wrap;
 }
 
-footer section {
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    align-items: center;
-    place-content: center;
-    gap:20px;
-    padding:30px 0;
+.logo-dormilin {
+  width: 140px; /* O el ancho que prefieras para la columna del logo */
+  flex-shrink: 0;
 }
 
-ul{
-    padding: 0px;
-    margin-bottom: 0px;
+.logo-dormilin img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-
-
-.logo-dormilin img{
-    width:25% ;
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinea los ítems a la izquierda entre sí */
+  gap: 10px;
 }
 
-.contact-info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+.contact-info_item {
+  display: flex;
+  align-items: center; /* Centra el ícono y el texto verticalmente */
+  gap: 10px;
 }
 
-.social-media_redes{
-    display: flex;
-    flex-direction: column;
-    gap:10px;
+.social-media_redes {
+  list-style: none;
+  display: flex;
+  flex-direction: column; /* Si quieres los íconos en fila horizontal, usa: row */
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
 }
 
 .contact-info i,
-.social-media i{
-    font-size: 16px;
+.social-media i {
+  font-size: 16px;
 }
 
-.contact-info_item{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
+
 
 .fa-cart-shopping,
 .fa-eye,
@@ -182,11 +189,11 @@ ul{
 /* --- TABLETS (A partir de 768px) --- */
 
 @media screen and (min-width: 768px){
-    footer section {
+    /* footer section {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     align-items: center;
-}
+} */
    
 }
 

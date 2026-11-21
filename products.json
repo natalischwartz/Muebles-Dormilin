@@ -4,7 +4,7 @@
         "name":"mueble1",
         "price":23000,
         "description":"lorem impsum",
-        "img":"https://picsum.photos/id/237/200/300"
+        "img":"./img/mueble-1.jpg"
         
 
     },
@@ -12,23 +12,71 @@
         "name":"mueble2",
         "price":24000,
         "description":"lorem impsum",
-        "img":"https://picsum.photos/seed/picsum/200/300"
+        "img":"./img/mueble-2.jpg"
         
 
     },
     {   "id":"2",
-        "name":"mueble2",
+        "name":"mueble3",
         "price":24000,
         "description":"lorem impsum",
-        "img":"https://picsum.photos/seed/picsum/200/300"
+        "img":"./img/mueble-3.jpg"
         
 
     },
     {   "id":"3",
-        "name":"mueble2",
+        "name":"mueble4",
         "price":24000,
         "description":"lorem impsum",
-        "img":"https://picsum.photos/seed/picsum/200/300"
+        "img":"./img/mueble-4.jpg"
+        
+
+    },
+     {   "id":"4",
+        "name":"mueble5",
+        "price":24000,
+        "description":"lorem impsum",
+        "img":"./img/mueble-5.jpg"
+        
+
+    },
+     {   "id":"5",
+        "name":"mueble6",
+        "price":24000,
+        "description":"lorem impsum",
+        "img":"./img/mueble-6.jpg"
+        
+
+    },
+     {   "id":"6",
+        "name":"mueble7",
+        "price":24000,
+        "description":"lorem impsum",
+        "img":"./img/mueble-7.jpg"
+        
+
+    },
+     {   "id":"7",
+        "name":"mueble8",
+        "price":24000,
+        "description":"lorem impsum",
+        "img":"./img/mueble-8.jpg"
+        
+
+    },
+     {   "id":"8",
+        "name":"mueble9",
+        "price":24000,
+        "description":"lorem impsum",
+        "img":"./img/mueble-9.jpg"
+        
+
+    },
+    {   "id":"9",
+        "name":"mueble10",
+        "price":24000,
+        "description":"lorem impsum",
+        "img":"./img/mueble-10.png"
         
 
     }
